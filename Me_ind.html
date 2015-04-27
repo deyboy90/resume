@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>My CV</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.2.min.js"></script>
+        <script src="js/custom.js"></script>
+        <style type="text/css">
+            .panel-title {
+                font-size: 22px;
+            }
+
+            body {
+                font-family: 'Roboto', sans-serif;
+            }
+
+            h1 {
+                font-size: 48px;
+                text-transform: uppercase;
+            }
+            h4 {
+                text-align: center;
+                font-weight: bold;
+                text-decoration: underline;
+            }
+
+            table[class *= 'with-side-header'] th{
+                width: 20%;
+            }
+            table th {
+                font-size: 1.1em;
+            }
+
+            .glyphicon {
+                color:#0f0f0f;
+            }
+
+            /* Sidebar Styles */
+            ul.nav-tabs{
+                width: 140px;
+                margin-top: 0px;
+                border-radius: 4px;
+                border: 1px solid #ddd;
+                box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+            }
+            ul.nav-tabs li{
+                margin: 0;
+                border-top: 1px solid #ddd;
+                text-align: center;
+            }
+            ul.nav-tabs li:first-child{
+                border-top: none;
+            }
+            ul.nav-tabs li a{
+                margin: 0;
+                padding: 8px 16px;
+                border-radius: 0;
+            }
+            ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+                color: #fff;
+                background: #0088cc;
+                border: 1px solid #0088cc;
+            }
+            ul.nav-tabs li:first-child a{
+                border-radius: 4px 4px 0 0;
+            }
+            ul.nav-tabs li:last-child a{
+                border-radius: 0 0 4px 4px;
+            }
+            ul.nav-tabs.affix{
+                top: 30px; /* Set the top position of pinned element */
+            }
+        </style>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#myNav").affix({
+                    offset: {
+                        top: 100
+                    }
+                });
+            });
+        </script>
+    </head>
+
+    <body data-spy="scroll" data-target="#myScrollspy">
+        <div class="container-fluid">
+            <nav class="navbar navbar-default visible-xs" role="navigation">
+                <div class="navbar-header" >
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="glyphicon glyphicon-menu-down"></span>
+                    </button>
+                    <span class="navbar-brand">Contents</span>
+                </div>
+                <div class="collapse navbar-collapse" id="collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#Summary">Summary</a></li>
+                        <li><a href="#Objective">Objective</a></li>
+                        <li><a href="#Education">Education</a></li>
+                        <li><a href="#Skills">Skills</a></li>
+                        <li><a href="#Projects">Projects</a></li>
+                        <li><a href="#Awards">Awards</a></li>
+                        <li><a href="#Interests">Interests</a></li>  
+                    </ul>   
+                </div>
+            </nav>
+            <header class="page-header">
+                <h1>Archit Dey <small>Automation Engineer</small></h1>
+            </header>
+            <div class="row">
+                <aside class="col-sm-2 hidden-xs" id="myScrollspy">
+                    <ul class="nav nav-tabs nav-stacked" id="myNav">
+                        <li><a href="#Summary">Summary</a></li>
+                        <li><a href="#Objective">Objective</a></li>
+                        <li><a href="#Education">Education</a></li>
+                        <li><a href="#Skills">Skills</a></li>
+                        <li><a href="#Projects">Projects</a></li>
+                        <li><a href="#Awards">Awards</a></li>
+                        <li><a href="#Interests">Interests</a></li>
+                    </ul>
+                </aside>
+
+                <div class="col-sm-9 pull-right">
+                    <section>
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h2 id="Summary" class="panel-title">Summary</h2>
+                            </div>
+                            <div class="panel-body">
+                                <p>A quick learner who understands the big picture and effectively aligns effort to achieve the main
+                                    objective. Critical of self and thrives to achieve perfection thereby staying distinguished from
+                                    the rest. A good mentor with ability to gain insight into other’s weakness and guide them
+                                    towards improvement.
+                                </p>
+                            </div>
+                        </div>
+
+                    </section>
+                    <section>
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h2 id="Objective" class="panel-title">Objective</h2>
+                            </div>
+                            <div class="panel-body">
+                                <p>To establish myself as a strong contributing factor in the rapidly evolving field of Information
+                                    Technology by utilizing my skills and creative ideas.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h2 id="Education" class="panel-title">Education</h2>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-8 col-md-offset-2 col-xs-12">
+                                        <!--<div class="table-responsive">-->
+                                        <table class="table">
+                                            <tr><th>#</th><th>Qualification</th><th>Percentage</th><th>University<span class="visible-xs">,Year</span></th><th class="hidden-xs">Completion Year</th></tr>
+                                            <tr><th>1</th><td>B.E. In Electronics & Communication</td><td>71.8</td><td>Visvesvaraya Technological University<span class="visible-xs">, 2011</span></td><td class="hidden-xs">2011</td></tr>
+                                            <tr><th>2</th><td>12th Standard</td><td>84.4</td><td>C.B.S.E<span class="visible-xs">, 2007</span></td><td class="hidden-xs">2007</td></tr>
+                                            <tr><th>3</th><td>10th Standard</td><td>79.4</td><td>C.B.S.E<span class="visible-xs">, 2005</span></td><td class="hidden-xs">2005</td></tr>
+                                        </table>
+                                        <!--</div>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h2 id="Skills" class="panel-title">Skills</h2>
+                            </div>
+                            <div class="panel-body">
+
+                                <div class="row">
+
+                                    <div class="col-md-6 col-lg-4">
+                                        <h4>Technical Skills</h4>
+                                        <table class="table table-bordered">
+                                            <tr class="info"><th>Area</th><th>Skills</th></tr>
+                                            <tr><td>Programming</td><td>Java, Ruby, Python, Visual Basic, SQL</td></tr>
+                                            <tr><td>Automation Tools</td><td>WATIR, Selenium-Webdriver</td></tr>
+                                            <tr><td>Testing Frameworks</td><td>RSpec, Cucumber, TestNG, PyUnit</td></tr>
+                                            <tr><td>Web Development</td><td>HTML, CSS, Javascript, XML, JSP, Struts2, DOJO </td></tr>
+                                            <tr><td>Database</td><td>Oracle</td></tr>
+                                            <tr><td>SCM</td><td>Git, SVN, ClearCase</td></tr>
+                                            <tr><td>Build Tools & CI</td><td>Ant, Maven, Rake, Jenkins</td></tr>
+                                            <tr><td>Process</td><td>Agile, DevOps</td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <h4>Certifications</h4>
+                                        <table class="table table-bordered">
+                                            <tr class="info"><th colspan="2">External</th></tr>
+                                            <tr><td>International Software Testing Qualifications Board Foundation Level Exam</td><td>May, 2013</td></tr>
+                                            <tr><td>Oracle Certified Associate – SQL Expert</td><td>Oct, 2011</td></tr>
+                                            <tr class="info"><th colspan="2">Internal</th></tr>
+                                            <tr><td>Infosys Certified Open Systems Engineer</td><td>Jul, 2012</td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="clearfix visible-md-block"></div>
+                                    <div class="col-md-8 col-md-offset-2 col-lg-4 col-lg-offset-0">
+                                        <h4>Behavioral Skills</h4>
+                                        <table class="table table-bordered">
+                                            <tr class="info"><th>Area</th><th>Description</th></tr>
+                                            <tr><td>Objective Oriented</td><td>Driven myself on the current objectives of the project and continuously directed my efforts towards it.</td></tr>
+                                            <tr><td>Innovative</td><td>On constant lookout for possible optimizations in the work process and try to optimize it by contributing innovative solutions.</td></tr>
+                                            <tr><td>Team Player</td><td>Clearly understand the importance of team work to achieve the stated objectives in a quicker and effective manner.</td></tr>
+                                            <tr><td>Problem Anticipation</td><td>Demonstrated the ability to anticipate problems and come up with possible solutions.</td></tr>
+                                            <tr><td>Effective Communication</td><td>Able to communicate clearly both verbally and in written. Also can understand the sensitive situations and communicate appropriately.</td></tr>
+                                            <tr><td>Good Learner</td><td>Learnt concepts from an applicative point of view so that it can be easily applied to real life contexts.</td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h2 id="Projects" class="panel-title">Projects</h2>
+                            </div>
+                            <div class="panel-body">
+                                <h4>GUI Test Automation Framework Development</h4>
+                                <ul>
+                                    <li><span class="text-primary">Technology Used:</span> Java, Selenium-webdriver and TestNG.</li>
+                                    <li>Researched on the latest market automation tools and techniques, decided on the approach and technology selection.</li>
+                                    <li>Crafted the backbone of the automation framework exploiting the concepts of Page Objects, Modularization and Data Driven Testing.</li>
+                                    <li>Designed the core intelligence of the Auto generation module which can generate element ID’s and test data from the web page significantly minimizing the manual effort during automation scripting.</li>
+                                    <li>Maintained & Enhanced the automation framework to cater new requirements.</li>
+                                    <li>Setup the Git, Gerrit & Jenkins Development flow with automation framework.</li>                           
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h2 id="Awards" class="panel-title">Awards & Appreciations</h2>
+                            </div>
+                            <div class="panel-body">
+
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h2 id="Interests" class="panel-title">Interests</h2>
+                            </div>
+                            <div class="panel-body">
+                                <table class="table table-bordered with-side-header">
+                                    <tr><th class="info"><span class="glyphicon glyphicon-knight"></span> Sports  </th><td>Was a part of college soccer team and also represented Infosys in local corporate soccer tournaments. </td></tr>
+                                    <tr><th class="info"><span class="glyphicon glyphicon-music"></span> Music  </th><td>Intermediate level keyboard player and also enjoy listening music of multiple genres ranging from the Easy listening, Pop to high volume Trance. </td></tr>
+                                    <tr><th class="info"><span class="glyphicon glyphicon-knight"></span> Gaming  </th><td>Enjoy playing Racing, Real time Strategy and Soccer simulation games.</td></tr>
+                                    <tr><th class="info"><span class="glyphicon glyphicon-book"></span> Reading  </th><td>Enjoy reading edifying books on self-help, inspiration and try to imbibe those principles in life.</td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    </body>
+</html>
